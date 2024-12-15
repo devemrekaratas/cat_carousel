@@ -3,7 +3,7 @@
 
 .fade-enter-active,
 .fade-leave-active {
-    transition: opacity 0.8s ease;
+    transition: opacity 1s ease;
 }
 
 .fade-enter-from,
@@ -13,10 +13,10 @@
 
 .slide-fade-enter-active,
 .slide-fade-leave-active {
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 1s ease, opacity 1s ease;
 }
 
-.slide-fade-enter,
+.slide-fade-enter-from,
 .slide-fade-leave-to {
     opacity: 0;
     transform: translateX(100%);
@@ -24,10 +24,10 @@
 
 .zoom-enter-active,
 .zoom-leave-active {
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 1s ease, opacity 1s ease;
 }
 
-.zoom-enter,
+.zoom-enter-from,
 .zoom-leave-to {
     transform: scale(0.8);
     opacity: 0;
@@ -35,11 +35,11 @@
 
 .vertical-slide-enter-active,
 .vertical-slide-leave-active {
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition: all 1s ease-in-out;
 }
 
-.vertical-slide-enter,
+.vertical-slide-enter-from,
 .vertical-slide-leave-to {
+    transform: translateY(30px);
     opacity: 0;
-    transform: translateY(100%);
 }
